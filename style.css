@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+marquee{
+    background-color: rgb(164, 242, 176);
+    padding: 20px;
+}
+h1{
+    padding: 4rem;
+    text-align: center;
+    font-size: 3rem;
+    overflow: hidden;
+    position: relative;
+    background-image: url("img/mung.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 20s infinite ease-in-out;
+
+}
+nav{
+    background-color: rgb(66, 211, 234);
+    height: 80px;
+    width: 100%;
+    
+   
+  
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    text-decoration: none;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    text-decoration: none;
+    
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+a.active,a:hover{
+    background-color: rgb(117, 133, 235);
+    transition: .5s;
+}
+
+
+.container{
+    width: 100%;
+    height: auto;
+   
+    background-color: rgb(234, 121, 121);
+    display: flex;
+    flex-wrap: nowrap;
+}
+.box{
+    width: 60rem;
+    height: 20rem;
+    background-image: url("img/back6.jpg");
+    margin: 0.1rem;
+    box-sizing: border-box;
+    font-size: 1rpm;
+    
+}
+h2{
+    background-image: url("img/back4.jpg") ;
+    padding: 1.5rem;
+   
+   
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.cardbox{
+    width: 100%;
+    height: 300px;
+    box-shadow: 0px 0px 3px black;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border: 4px solid white;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+    animation: slide 12s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+    
+}
+@keyframes change{
+    0%{
+        background-image: url("img/back9.jpg");
+    }
+    20%{
+        background-image: url("img/bajra3.jpg");
+    }
+    40%{
+        background-image: url("img/papita.jpg");
+    }
+    60%{
+        background-image: url("img/arhar1.webp");
+    }
+    80%{
+        background-image: url("img/daniya.webp");
+    }
+    100%{
+        background-image: url("img/kevachh.jpg");
+    }
+    
+}
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+body{
+   background-color: rgb(137, 203, 227);
+}
+img{
+    width: 23.52rem;
+    height: 360px;
+ }

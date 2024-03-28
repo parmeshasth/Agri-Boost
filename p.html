@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.855);
+}
+.slider-container{
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+.pre-button,.next-button{
+     width: 40px;
+     height: 60px;
+     font-size: 30px;
+     font-weight: bold;
+     color: rgba(245, 245, 220, 0.432);
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     position: absolute;
+     transition: background-color 0.3s ease;
+}
+.pre-button{
+    left: 0;
+}
+.next-button{
+    right: 0;
+}
+.pre-button:hover,.next-button:hover{
+    color: wheat;
+}
+.lines{
+    position: absolute;
+    display: flex;
+    bottom: 187px;
+}
+.line{
+    padding: 1.5px 10px;
+    margin: 0 3px;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.active,
+.line:hover{
+    background-color: white;
+}
+.slider{
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider-container">
+          <div class="slider">
+              <a href="#"><img class="d"src="img/kisan2.jpg"></a>
+          </div>
+          <div class="slider">
+              <a href="#"><img class="d"src="img/kisan4.jpg"></a>
+          </div>
+          <div class="slider">
+              <a href="#"><img class="d"src="img/kisan3.jpg"></a>
+          </div>
+          <div class="slider">
+              <a href="#"><img class="d"src="img/kisan5.jpg"></a>
+          </div>
+          <div class="pre-button" onclick="pluseslide(-1)">&#10034;</div>
+          <div class="next-button"onclick="pluseslide(1)">&#10035;</div>
+          <div class="lines">
+              <div class="line" onclick="currentslide(1)"></div>
+              <div class="line"onclick="currentslide(2)"></div>
+              <div class="line"onclick="currentslide(3)"></div>
+              <div class="line"onclick="currentslide(4)"></div>
+
+          </div>
+        </div>
+     </div>
+    <script>
+         var index=0;
+        i=0;
+        auto();
+        
+        var slider=document.getElementsByClassName('slider');
+        var line=document.getElementsByClassName('line');
+        function show(n){
+            for(i=0;i<slider.length;i++){
+                slide[i].style.display="none";
+            }
+            for(i=0;i<line.length;i++){
+                line[i].className=line[i].className.replace("action");
+            }
+            slider[n-1].style.display=("block");
+            line[n-1].className+="action";
+        }
+        function auto(){
+            index++;
+            if(index>slider.length){
+                index=1;
+
+            }
+            show(index);
+            setTimeout(auto,5000)
+        }
+    </script>
+</body>
+</html>

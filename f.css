@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+s{
+    background-image: url("img/back4.jpg");
+    font-family: 'poppins',sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+}
+.cover{
+    width:100%;
+    height: 42.5rem;
+    background-color: rgb(186, 186, 235);
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0.2rem;
+   
+}
+.box{
+    width: 22.48rem;
+    height: 0rem;
+    margin: 10px;
+}
+img{
+   width: 21.5rem;
+   height: 23rem;
+  
+}
+marquee{
+    background-color: rgb(243, 107, 107);
+    padding: 1rem;
+}
+.rrr{
+    background-image: url("img/ganna2.webp");
+    padding:1.5rem ;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+h1{
+    background-image: url("img/back9.jpg");
+    padding: 2.5rem;
+    animation: change 5s infinite ease-in-out;
+    text-align: center;
+   
+    
+}
+@keyframes change{
+    0%{
+        background-image: url("img/back9.jpg");
+    }
+    20%{
+        background-image: url("img/bajra3.jpg");
+    }
+    40%{
+        background-image: url("img/papita.jpg");
+    }
+    60%{
+        background-image: url("img/arhar1.webp");
+    }
+    80%{
+        background-image: url("img/daniya.webp");
+    }
+    100%{
+        background-image: url("img/kevachh.jpg");
+    }
+    
+}
+.d{
+    background-color: rgb(227, 232, 80);
+}
+.n{
+    background-color: rgb(227, 232, 80);
+}
+body{
+   background-image: url("img/back9.jpg");
+}
+@media(max-width:998px){
+    html{
+        font-size: 45%;
+    }
+}

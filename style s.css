@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("img/kevachh.jpg");
+}
+marquee{
+    background-color: rgb(44, 242, 94);
+    padding: 20px;
+}
+h1{ 
+    background-image: url('img/back6.jpg');
+    padding: 30px;
+    text-align: center;
+
+    
+
+}
+.container{
+    width: 100%;
+    height: auto;
+    background: #c25353;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.box{
+    width: 23.5rem;
+    height: auto;
+    background-color: #c2ec6d;
+    margin: 00.1rem;
+    box-sizing: border-box;
+    font-size: 1rpm;
+    
+}
+h2{
+    background-image: url("img/back4.jpg");
+    padding: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+img{
+   width: 23.52rem;
+   height: 360px;
+}
